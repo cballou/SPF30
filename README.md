@@ -35,6 +35,7 @@ You may also tweak the `$submission_frequency`, which determines how long a user
 must wait before being able to resubmit a form.
 
 ```php
+<?php
 // update from 5 to 10 seconds
 spam::$submission_frequency = 10;
 ```
