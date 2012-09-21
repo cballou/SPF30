@@ -82,7 +82,7 @@ if (!empty($_POST)) {
 		var_dump($_POST);
 	
 		// run validation on the submitted email form
-		spam::validate($this->input);
+		spam::validate($_POST);
 		
 		// no exceptions thrown, use decrypted form data as you please
 		var_dump($_POST);
