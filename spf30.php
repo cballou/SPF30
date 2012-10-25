@@ -65,7 +65,7 @@ class spam {
 	{
 		self::$timestamp = !empty($input['ts']) ? $input['ts'] : null;
 		if (self::$timestamp == null || !is_numeric(self::$timestamp)) {
-			throw new AppException('The timestamp does not appear to be correct.');
+			throw new Exception('The timestamp does not appear to be correct.');
 		}
 
 		// if form submitted in under 5 seconds since page load, assume cURL
